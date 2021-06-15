@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bill Divider</title>
+    <link rel="stylesheet" href="bill.css">
+</head>
+<body>
+    <div class="container center">
+        <div class="bill-divider-wrapper">
+            <div class="title">
+                <h1>Bill Divider</h1>
+            </div>
+            <div class="bill-inputs">
+                <form action="" id="bill-divider-form">
+                    <div class="form-group">
+                        <label for="subtotal">Total bill</label>
+                        <input type="number" id="subtotal" class="form-control" min="0" step="any" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="tip">tip (%)</label>
+                        <input type="number" id="tip" class="form-control" min="0" step="any" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="no-of-person">no of person</label>
+                        <input type="number" id="no-of-person" class="form-control" min="0" step="1" required>
+                    </div>
+
+                    <input type="submit" id="calc-btn" value="calculate">
+                </form>
+            </div>
+            <div class="bill-output">
+                <div class="text-group">
+                    <h3>Total bill</h3>
+                    <span id="total-bill">R 00.00</span>
+                </div>
+
+                <div class="text-group">
+                    <h3>Bill per person</h3>
+                    <span id="bill-per-person">R 00.00</span>
+                </div>
+
+                <div class="text-group">
+                    <h3>Total tip</h3>
+                    <span id="total-tip">R 00.00</span>
+                </div>
+
+                <div class="text-group">
+                    <h3>Tip per person</h3>
+                    <span id="tip-per-person">R 00.00</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="bill.js"></script>
+</body>
+</html>
